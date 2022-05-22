@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+svg {
+  width: 600px;
+}
+
+#right-wheel, #left-wheel {
+  animation: wheel 1s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#man {
+  animation: man 2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+#hat {
+   animation: hat 2s ease-in-out infinite;
+   transform-origin: top;
+   transform-box: fill-box;
+}
+
+#cloud {
+  animation: cloud 5s linear infinite;
+}
+
+#building {
+  animation: building 5s linear infinite;
+}
+
+@keyframes building {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#leaf {
+  animation: building 5s linear infinite;
+}
+
+@keyframes leaf {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes man {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(10deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes hat {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
